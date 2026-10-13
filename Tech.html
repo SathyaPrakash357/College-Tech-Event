@@ -3,223 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova 2026 | Tech Symposium</title>
+    <title>Tech Symposium 2026</title>
     <style>
-        /* General Reset and Base Styles */
+        /* Minimalist Base Styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+            background-color:beige;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #0f172a; /* Dark tech background */
-            color: #f8fafc;
-            line-height: 1.6;
         }
 
-        /* Header Styles */
-        header {
-            background: #1e293b;
-            padding: 2rem 1rem;
-            text-align: center;
-            border-bottom: 2px solid #38bdf8;
-        }
-        
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
-            font-size: 2.8rem;
-            letter-spacing: 1px;
-        }
-        
-        header p {
-            margin: 0.5rem 0 0 0;
-            color: #94a3b8;
-            font-size: 1.1rem;
-        }
-
-        /* Navigation Bar */
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            padding: 1rem;
-            background: rgba(15, 23, 42, 0.95);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-        
-        nav a {
-            color: #e2e8f0;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        
-        nav a:hover {
-            background: #38bdf8;
-            color: #0f172a;
-        }
-
-        /* Hero Section */
-        .hero {
-            text-align: center;
-            padding: 5rem 2rem;
-            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
-        }
-        
-        .hero h2 {
-            font-size: 3rem;
-            margin: 0;
-            text-transform: uppercase;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin: 1.5rem 0 2.5rem;
-            color: #cbd5e1;
-        }
-        
-        .btn {
-            background: #38bdf8;
-            color: #0f172a;
-            padding: 12px 30px;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 30px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: inline-block;
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
-        }
-
-        /* Main Content & Event Cards */
+        /* Centered Container */
         .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-            font-size: 2.2rem;
-            color: #f1f5f9;
-        }
-        
-        .events {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        
-        .event-card {
-            background: #1e293b;
-            padding: 2rem;
-            border-radius: 12px;
-            width: 300px;
-            text-align: center;
-            border: 1px solid #334155;
-            transition: transform 0.3s;
-        }
-        
-        .event-card:hover {
-            transform: translateY(-5px);
-            border-color: #38bdf8;
-        }
-        
-        .event-card h3 {
-            color: #38bdf8;
-            margin-top: 0;
-            font-size: 1.5rem;
-        }
-        
-        .event-card p {
-            color: #94a3b8;
-            font-size: 0.95rem;
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
         }
 
-        /* Footer */
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            color: #111;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-top: 0;
+        }
+
+        /* Simple Grid for Events */
+        .event-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        /* Clean Event Cards */
+        .event-item {
+            background: #ffffff;
+            padding: 25px 30px;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .event-item h2 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .event-item p {
+            margin: 0;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* Minimal Footer */
         footer {
             text-align: center;
-            padding: 2rem;
-            background: #020617;
-            border-top: 1px solid #334155;
-            color: #64748b;
-        }
-        
-        footer p {
-            margin: 0.5rem 0;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h2 { font-size: 2.2rem; }
-            nav { flex-wrap: wrap; gap: 0.5rem; }
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eaeaea;
+            color: #888;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>CSE Tech Symposium</h1>
+            <p class="subtitle">National Institute of Engineering, Mysuru</p>
+        </header>
 
-    <!-- Header Section -->
-    <header id="home">
-        <h1>TechNova 2026</h1>
-        <p>National Institute of Engineering, Mysuru • Dept of Computer Science</p>
-    </header>
-
-    <!-- Sticky Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#events">Events</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#register">Register</a>
-    </nav>
-
-    <!-- Hero/Landing Section -->
-    <section class="hero">
-        <h2>Innovate. Build. Conquer.</h2>
-        <p>Join us for the ultimate technical symposium celebrating code, design, and strategy.</p>
-        <a href="#register" class="btn">Register Your Team</a>
-    </section>
-
-    <!-- Events Section -->
-    <div class="container" id="events">
-        <h2 class="section-title">Featured Competitions</h2>
-        <div class="events">
-            
-            <!-- Event 1 -->
-            <div class="event-card">
-                <h3>Full-Stack Hackathon</h3>
-                <p>Build real-world web solutions using Django, Flask, or modern JS frameworks in an intense 24-hour sprint.</p>
+        <div class="event-list">
+            <div class="event-item">
+                <h2>Web Development Sprint</h2>
+                <p>Build clean, responsive UI layouts. Develop full-stack applications using HTML, CSS, JavaScript, alongside frameworks like Django or Flask.</p>
             </div>
             
-            <!-- Event 2 -->
-            <div class="event-card">
-                <h3>Esports Arena</h3>
-                <p>Coordinate with your squad and show off your tactical skills in our BGMI and Free Fire MAX tournaments.</p>
-            </div>
-            
-            <!-- Event 3 -->
-            <div class="event-card">
-                <h3>CyberSec CTF</h3>
-                <p>Test your network analysis and penetration testing skills in our Capture The Flag challenge.</p>
+            <div class="event-item">
+                <h2>Esports Tournament</h2>
+                <p>Team up for competitive 4v4 tactical matches in BGMI and Free Fire MAX.</p>
             </div>
 
+            <div class="event-item">
+                <h2>Network & Security Challenge</h2>
+                <p>Demonstrate practical routing topologies and utilize tools like Nmap in a simulated cybersecurity environment.</p>
+            </div>
         </div>
+
     </div>
-
-    <!-- Footer Section -->
-    <footer id="register">
-        <p>&copy; 2026 TechNova Organized by the CSE Department | NIE Mysuru</p>
-        <p>For queries, contact: techfest@nie.ac.in</p>
-    </footer>
-
 </body>
 </html>
